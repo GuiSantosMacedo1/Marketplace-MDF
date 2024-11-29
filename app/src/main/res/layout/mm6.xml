@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFE5E5E5">
+
+
+    <TextView
+        android:id="@+id/logoTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="#1D267D"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="FMD"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/card6mm_branco"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card6mm_verde"
+        android:layout_width="160dp"
+        android:layout_height="183dp"
+        android:layout_margin="20dp"
+        android:layout_marginStart="26dp"
+
+        android:layout_marginEnd="57dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/card6mm_branco"
+        app:layout_constraintEnd_toStartOf="@+id/card6mm_branco"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/card6mm_branco"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="153dp"
+            android:layout_gravity="top"
+            android:src="@drawable/mdf_verde" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="160dp"
+            android:text="6mm"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card6mm_branco"
+        android:layout_width="160dp"
+        android:layout_height="183dp"
+        android:layout_margin="20dp"
+        android:layout_marginStart="26dp"
+
+        android:layout_marginBottom="21dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/card6mm_madeira"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/card6mm_verde"
+        app:layout_constraintTop_toBottomOf="@+id/logoTextView"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="top"
+            android:src="@drawable/mdf_branco" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="160dp"
+            android:text="6mm"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card6mm_cinza"
+        android:layout_width="160dp"
+        android:layout_height="183dp"
+        android:layout_margin="20dp"
+        android:layout_marginStart="26dp"
+
+        android:layout_marginEnd="57dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/card6mm_madeira"
+        app:layout_constraintEnd_toStartOf="@+id/card6mm_madeira"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/card6mm_madeira"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="top"
+            android:src="@drawable/mdf_cinza" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="160dp"
+            android:text="6mm"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card6mm_madeira"
+        android:layout_width="160dp"
+        android:layout_height="183dp"
+        android:layout_margin="20dp"
+        android:layout_marginStart="26dp"
+
+        android:layout_marginBottom="29dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/card6mm_preto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/card6mm_cinza"
+        app:layout_constraintTop_toBottomOf="@+id/card6mm_branco"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="top"
+            android:src="@drawable/mdf_madeira" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="160dp"
+            android:text="6mm"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card6mm_vermelho"
+        android:layout_width="160dp"
+        android:layout_height="183dp"
+        android:layout_margin="20dp"
+        android:layout_marginStart="26dp"
+
+        android:layout_marginEnd="57dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/card6mm_preto"
+        app:layout_constraintEnd_toStartOf="@+id/card6mm_preto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/card6mm_preto"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="top"
+            android:src="@drawable/mdf_vermelho" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="160dp"
+            android:text="6mm"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card6mm_preto"
+        android:layout_width="160dp"
+        android:layout_height="183dp"
+        android:layout_margin="20dp"
+        android:layout_marginStart="26dp"
+
+        android:layout_marginBottom="33dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/card6mm_vermelho"
+        app:layout_constraintTop_toBottomOf="@+id/card6mm_madeira"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="158dp"
+            android:layout_gravity="top"
+            android:src="@drawable/mdf_preto" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="160dp"
+            android:text="6mm"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
