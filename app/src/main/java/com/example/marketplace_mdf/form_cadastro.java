@@ -11,46 +11,31 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class form_login extends AppCompatActivity {
+public class form_cadastro extends AppCompatActivity {
 
-    private TextView text_tela_cadastro;
-    private TextView text_tela_esqueci_senha;
-
+    private TextView text_tela_login;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_form_login);
+        setContentView(R.layout.activity_form_cadastro);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        IniciarComponentes();
-        esqueciSenhaComponentes();
-        text_tela_cadastro.setOnClickListener(new View.OnClickListener() {
+        loginComponentes();
+        text_tela_login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                Intent intent = new Intent(form_login.this, form_cadastro.class);
-                startActivity(intent);
-            }
-        });
-
-        text_tela_esqueci_senha.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(form_login.this, esqueci_senha.class);
+                Intent intent = new Intent(form_cadastro.this, form_login.class);
                 startActivity(intent);
             }
         });
     }
 
-    private void IniciarComponentes(){
-    text_tela_cadastro = findViewById(R.id.textTelaCadastro);
-    }
-
-    private void esqueciSenhaComponentes(){
-        text_tela_esqueci_senha = findViewById(R.id.textTelaEsqueciSenha);
+    private void loginComponentes(){
+        text_tela_login = findViewById(R.id.textCadastrado);
     }
 }

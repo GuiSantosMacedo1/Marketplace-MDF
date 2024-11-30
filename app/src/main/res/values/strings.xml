@@ -6,4 +6,6 @@
     <string name="logo_imagem">Logo Imagem</string>
     <string name="email">Email</string>
     <string name="password">Senha</string>
+    <string name="title_activity_form_cadastro">form_cadastro</string>
+    <string name="title_cadasto">Cadastre-se</string>
 </resources>
