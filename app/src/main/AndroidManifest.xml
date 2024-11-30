@@ -13,15 +13,18 @@
         android:theme="@style/Theme.MarketplaceMDF"
         tools:targetApi="31">
         <activity
-            android:name=".esqueci_senha"
+            android:name=".catalogoComponent"
             android:exported="false" />
         <activity
-            android:name=".form_cadastro"
+            android:name=".esqueciSenha"
+            android:exported="false" />
+        <activity
+            android:name=".formCadastro"
             android:exported="false"
             android:label="@string/title_activity_form_cadastro"
             android:theme="@style/Theme.MarketplaceMDF" />
         <activity
-            android:name=".form_login"
+            android:name=".formLogin"
             android:exported="true"
             android:theme="@style/Theme.MarketplaceMDF">
             <intent-filter>
