@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/textViewCodigoBarras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Código de Barras: \n82640000000 4 76300097091 6 \n08685669918 5 19581011643 2"
+        android:textSize="18sp"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:id="@+id/textViewNumeroControle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Número de Controle: 9108685669918"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textViewValorTotalBoleto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Valor Total: R$"
+        android:textSize="18sp"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/buttonConfirmarPagamentoBoleto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirmar Pagamento"
+        android:textSize="18sp"/>
+</LinearLayout>
