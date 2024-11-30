@@ -35,7 +35,7 @@ public class formLogin extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent intent = new Intent(formLogin.this, formCadastro.class);
+                Intent intent = new Intent(formLogin.this, FormPag.class);
                 startActivity(intent);
             }
         });

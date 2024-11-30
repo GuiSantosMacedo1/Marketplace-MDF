@@ -13,6 +13,13 @@
         android:theme="@style/Theme.MarketplaceMDF"
         tools:targetApi="31">
         <activity
+            android:name=".FormPag"
+            android:exported="false" />
+        <activity
+            android:name=".FormPag"
+            android:exported="false"
+            tools:ignore="DuplicateActivity" />
+        <activity
             android:name=".mm6"
             android:exported="false" />
         <activity
