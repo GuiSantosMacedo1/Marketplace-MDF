@@ -1,11 +1,14 @@
 package com.example.marketplace_mdf;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.os.Handler;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
@@ -32,6 +35,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class formCadastro extends AppCompatActivity {
+    private TextView text_tela_cadastro;
     private EditText edit_nome, edit_email, edit_password;
     private Button bt_cadastrar;
     String[] mensagens = {"Preencha todos os campos", "Cadastro realizado com Sucesso!"};
@@ -134,6 +138,7 @@ public class formCadastro extends AppCompatActivity {
     }
 
     private void IniciarComponentes(){
+        text_tela_cadastro = findViewById(R.id.textCadastrado);
         edit_nome = findViewById(R.id.edit_nome);
         edit_email = findViewById(R.id.edit_email);
         edit_password = findViewById(R.id.edit_password);
