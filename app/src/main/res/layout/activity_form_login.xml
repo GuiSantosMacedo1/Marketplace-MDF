@@ -19,11 +19,11 @@
 
     <ImageView
         android:id="@+id/logo"
+        android:src="@drawable/logo"
         android:contentDescription="@string/logo_imagem"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_margin="80dp"
-        android:src="@drawable/Logo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
