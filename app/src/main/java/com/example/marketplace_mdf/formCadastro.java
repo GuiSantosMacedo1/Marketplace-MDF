@@ -1,5 +1,6 @@
 package com.example.marketplace_mdf;
 
+import android.content.BroadcastReceiver;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -34,14 +35,31 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import java.util.HashMap;
 import java.util.Map;
 
-public class formCadastro extends AppCompatActivity {
+public class formCadastro extends NetworkConnection {
     private TextView text_tela_cadastro;
     private EditText edit_nome, edit_email, edit_password;
     private Button bt_cadastrar;
     String[] mensagens = {"Preencha todos os campos", "Cadastro realizado com Sucesso!"};
     String usuarioID;
+    private BroadcastReceiver networkReceiver;
 
-
+    @Override
+    protected void onNetworkChanged(boolean isConnected) {
+        if (isConnected) {
+            // Comportamento quando há conexão
+        } else {
+            // Navega para a tela de conexão ausente
+            Intent intent = new Intent(formCadastro.this, NetworkConnection.class);
+            startActivity(intent);
+        }
+    }
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        if (networkReceiver != null) {
+            unregisterReceiver(networkReceiver);
+        }
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
