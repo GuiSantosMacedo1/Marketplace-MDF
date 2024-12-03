@@ -4,6 +4,7 @@ import android.content.BroadcastReceiver;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.example.marketplace_mdf.NetworkConnection;
 import com.example.marketplace_mdf.R;
@@ -14,13 +15,14 @@ public class FormaPagamento extends NetworkConnection {
     @Override
     protected void onNetworkChanged(boolean isConnected) {
         if (isConnected) {
-            // Comportamento quando há conexão
+
         } else {
-            // Navega para a tela de conexão ausente
+
             Intent intent = new Intent(FormaPagamento.this, NetworkConnection.class);
             startActivity(intent);
         }
     }
+
     @Override
     protected void onDestroy() {
         super.onDestroy();
@@ -28,6 +30,7 @@ public class FormaPagamento extends NetworkConnection {
             unregisterReceiver(networkReceiver);
         }
     }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -12,7 +12,7 @@
         android:id="@+id/textViewResumo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="55dp"
+        android:layout_marginTop="140dp"
         android:gravity="center"
         android:text="Produto: MDF\nTotal: R$ 362,00\nFrete para o Cep:01502-001 fica R$ 19,30 \nPrazo de entrega: Dia da \nPostagem + 3 dias úteis"
         android:textSize="26sp"
