@@ -1,17 +1,37 @@
 package com.example.marketplace_mdf.pagamento;
 
+import android.content.BroadcastReceiver;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.marketplace_mdf.NetworkConnection;
 import com.example.marketplace_mdf.R;
 
-public class CartaoCredito extends AppCompatActivity {
-
+public class CartaoCredito extends NetworkConnection {
+    private BroadcastReceiver networkReceiver;
     private EditText editTextNomeTitular, editTextNumeroCartao, editTextValidade, editTextCvv;
+
+    @Override
+    protected void onNetworkChanged(boolean isConnected) {
+        if (isConnected) {
+            // Comportamento quando há conexão
+        } else {
+            // Navega para a tela de conexão ausente
+            Intent intent = new Intent(CartaoCredito.this, NetworkConnection.class);
+            startActivity(intent);
+        }
+    }
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        if (networkReceiver != null) {
+            unregisterReceiver(networkReceiver);
+        }
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

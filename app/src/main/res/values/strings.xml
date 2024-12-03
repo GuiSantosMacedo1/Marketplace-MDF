@@ -8,4 +8,7 @@
     <string name="password">Senha</string>
     <string name="title_activity_form_cadastro">form_cadastro</string>
     <string name="title_cadasto">Cadastre-se</string>
+    <string name="text_Sem_Internet">Você está sem internet</string>
+    <string name="text_Tente_novamente">Tente novamente</string>
+    <string name="text_Reconecte">Tente se Reconectar</string>
 </resources>
