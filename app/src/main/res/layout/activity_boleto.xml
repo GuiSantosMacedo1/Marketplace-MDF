@@ -1,38 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp"
-    android:gravity="center">
+    android:background="#FFE5E5E5"
+    android:padding="16dp">
 
     <TextView
-        android:id="@+id/textViewCodigoBarras"
-        android:layout_width="wrap_content"
+        android:id="@+id/logoTextView"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Código de Barras: \n82640000000 4 76300097091 6 \n08685669918 5 19581011643 2"
-        android:textSize="18sp"
-        android:layout_marginBottom="20dp"/>
+        android:background="#1D267D"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="FMD"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/imageViewQRCode"
+        android:layout_marginBottom="16dp" />
+
+    <ImageView
+        android:id="@+id/imageViewQRCode"
+        android:layout_width="0dp"
+        android:layout_height="153dp"
+        android:layout_marginTop="76dp"
+        android:src="@drawable/codigoboleto"
+        app:layout_constraintTop_toBottomOf="@id/logoTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
     <TextView
         android:id="@+id/textViewNumeroControle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
         android:text="Número de Controle: 9108685669918"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageViewQRCode" />
+
+    <TextView
+        android:id="@+id/textViewCodigoBarras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Código de Barras: \n82640000000 4 76300097091 6 \n08685669918 5 19581011643 2"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewNumeroControle" />
 
     <TextView
         android:id="@+id/textViewValorTotalBoleto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Valor Total: R$"
-        android:textSize="18sp"
-        android:layout_marginBottom="20dp"/>
+        android:layout_marginTop="168dp"
+        android:gravity="center"
+        android:text="Valor Total: R$362,00"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewCodigoBarras" />
 
     <Button
         android:id="@+id/buttonConfirmarPagamentoBoleto"
+        style="@style/Button_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
         android:text="Confirmar Pagamento"
-        android:textSize="18sp"/>
-</LinearLayout>
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewValorTotalBoleto" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
