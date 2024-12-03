@@ -1,11 +1,9 @@
-package com.example.marketplace_mdf.pagamento;
+package com.example.marketplace_mdf;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
-
-import com.example.marketplace_mdf.R;
 
 public class FormaPagamento extends AppCompatActivity {
 
