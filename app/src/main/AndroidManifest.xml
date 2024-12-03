@@ -18,57 +18,7 @@
         <activity
             android:name=".NetworkConnection"
             android:exported="false" />
-        <activity
-            android:name=".formLogin"
-            android:exported="true"
-            android:theme="@style/Theme.MarketplaceMDF">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
 
-        <activity
-            android:name=".formCadastro"
-            android:exported="true"
-            android:label="@string/title_activity_form_cadastro"
-            android:theme="@style/Theme.MarketplaceMDF" />
-
-        <activity
-            android:name=".esqueciSenha"
-            android:exported="true" />
-
-        <activity
-            android:name=".catalogoComponent"
-            android:exported="true" />
-        <activity android:name=".mm6" android:exported="true" />
-        <activity android:name=".mm25" android:exported="true" />
-        <activity android:name=".mm21" android:exported="true" />
-        <activity android:name=".mm18" android:exported="true" />
-        <activity android:name=".mm15" android:exported="true" />
-        <activity android:name=".mm12" android:exported="true" />
-
-
-        <activity
-            android:name=".pagamento.FormaPagamento"
-            android:exported="true" />
-        <activity
-            android:name=".pagamento.Boleto"
-            android:exported="true" />
-
-        <activity
-            android:name=".pagamento.CartaoCredito"
-            android:exported="true" />
-
-        <activity
-            android:name=".pagamento.Pix"
-            android:exported="true" />
-
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </application>
+    </application>
 
 </manifest>
